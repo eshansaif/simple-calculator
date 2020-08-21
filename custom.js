@@ -12,6 +12,18 @@ document.getElementById("equalBtn").addEventListener("click",function(){
     if(document.getElementById("input-field").value.length > 17){
         document.getElementById("input-field").value = eval(displayValue).toFixed(15);
     }
+
+    try {
+        eval('hoo bar');
+      } catch (e) {
+        console.error(e instanceof SyntaxError); 
+        console.error(e.message);                
+        console.error(e.name);                   
+        console.error(e.fileName);               
+        console.error(e.lineNumber);             
+        console.error(e.columnNumber);           
+        console.error(e.stack);                  
+      }
 })
 
 document.getElementById("reset").addEventListener("click",function(){
