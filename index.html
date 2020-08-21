@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator card">
+
+        <form action="" name="">
+            <input name="display" id="input-field" type="text" class="calculator-screen z-depth-1 overflow-auto" value="" disabled />
+    
+        <div class="calculator-keys">
+    
+          <button type="button" class="operator btn btn-info" value="+" onclick="calculate(this.value)">+</button>
+          <button type="button" class="operator btn btn-info" value="-" onclick="calculate(this.value)">-</button>
+          <button type="button" class="operator btn btn-info" value="*" onclick="calculate(this.value)">&times;</button>
+          <button type="button" class="operator btn btn-info" value="/" onclick="calculate(this.value)">&divide;</button>
+    
+          <button type="button" value="7" class="btn btn-light waves-effect" onclick="calculate(this.value)">7</button>
+          <button type="button" value="8" class="btn btn-light waves-effect" onclick="calculate(this.value)">8</button>
+          <button type="button" value="9" class="btn btn-light waves-effect " onclick="calculate(this.value)">9</button>
+    
+    
+          <button type="button" value="4" class="btn btn-light waves-effect" onclick="calculate(this.value)">4</button>
+          <button type="button" value="5" class="btn btn-light waves-effect" onclick="calculate(this.value)">5</button>
+          <button type="button" value="6" class="btn btn-light waves-effect" onclick="calculate(this.value)">6</button>
+    
+    
+          <button type="button" value="1" class="btn btn-light waves-effect" onclick="calculate(this.value)">1</button>
+          <button type="button" value="2" class="btn btn-light waves-effect" onclick="calculate(this.value)">2</button>
+          <button type="button" value="3" class="btn btn-light waves-effect" onclick="calculate(this.value)">3</button>
+    
+    
+          <button type="button" value="0" class="btn btn-light waves-effect" onclick="calculate(this.value)">0</button>
+          <button type="button" class="decimal function btn btn-secondary" value="." onclick="calculate(this.value)">.</button>
+          <button id="reset" type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+          <button id="backspace" type="button" class="all-clear function btn btn-warning btn-sm" value="all-clear"> ← </button>
+
+    
+          <button id="equalBtn" type="button" class="equal-sign operator btn btn-default" value="=">=</button>
+    
+        </div>
+        </form>
+      </div>
+
+      <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+        <script src="script.js"></script>
+        <script src="custom.js"></script>
+</body>
+</html>
